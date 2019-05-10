@@ -2,7 +2,7 @@
 
 namespace Andrmoel\AstronomyBundle\Coordinates;
 
-class EclipticalSphericalCoordinates
+class AbstractEclipticalSphericalCoordinates
 {
     protected $longitude = 0.0;
     protected $latitude = 0.0;

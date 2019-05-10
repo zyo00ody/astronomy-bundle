@@ -6,7 +6,7 @@ use Andrmoel\AstronomyBundle\Calculations\EarthCalc;
 use Andrmoel\AstronomyBundle\TimeOfInterest;
 use Andrmoel\AstronomyBundle\Utils\AngleUtil;
 
-class GeocentricEclipticalSphericalCoordinates extends EclipticalSphericalCoordinates
+class GeocentricEclipticalSphericalCoordinates extends AbstractEclipticalSphericalCoordinates
 {
     public function getGeocentricEclipticalRectangularCoordinates(): GeocentricEclipticalRectangularCoordinates
     {

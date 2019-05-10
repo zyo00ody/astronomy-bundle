@@ -5,7 +5,7 @@ namespace Andrmoel\AstronomyBundle\Coordinates;
 use Andrmoel\AstronomyBundle\AstronomicalObjects\Planets\Earth;
 use Andrmoel\AstronomyBundle\TimeOfInterest;
 
-class HeliocentricEclipticalSphericalCoordinates extends EclipticalSphericalCoordinates
+class HeliocentricEclipticalSphericalCoordinates extends AbstractEclipticalSphericalCoordinates
 {
     public function getHeliocentricEclipticalRectangularCoordinates(): HeliocentricEclipticalRectangularCoordinates
     {

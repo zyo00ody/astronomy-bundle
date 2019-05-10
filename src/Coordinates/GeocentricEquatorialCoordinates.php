@@ -6,34 +6,8 @@ use Andrmoel\AstronomyBundle\Location;
 use Andrmoel\AstronomyBundle\TimeOfInterest;
 use Andrmoel\AstronomyBundle\Utils\AngleUtil;
 
-class GeocentricEquatorialCoordinates
+class GeocentricEquatorialCoordinates extends AbstractEquatorialCoordinates
 {
-    private $rightAscension = 0;
-    private $declination = 0;
-    private $radiusVector = 0;
-
-    public function __construct(float $rightAscension, float $declination, float $radiusVector = 0.0)
-    {
-        $this->rightAscension = $rightAscension;
-        $this->declination = $declination;
-        $this->radiusVector = $radiusVector;
-    }
-
-    public function getRightAscension(): float
-    {
-        return $this->rightAscension;
-    }
-
-    public function getDeclination(): float
-    {
-        return $this->declination;
-    }
-
-    public function getRadiusVector(): float
-    {
-        return $this->radiusVector;
-    }
-
     public function getGeocentricEclipticalSphericalCoordinates(
         float $obliquityOfEcliptic
     ): GeocentricEclipticalSphericalCoordinates
